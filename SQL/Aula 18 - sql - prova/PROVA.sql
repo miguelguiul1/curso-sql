@@ -58,7 +58,7 @@ from pedidos;
 -- 4.
 -- Mostre o menor preço cadastrado.
 select min(preco)
-as MaiorPreçoCadastrado
+as MenorPreçoCadastrado
 from pedidos;
 
 -- 5.
@@ -142,8 +142,6 @@ from pedidos
 group by cidade
 order by MédiaPreçoLivrosCidade desc;
 
-
-
 -- 16.
 -- Liste todos os livros com preço maior que 60.
 select livro
@@ -166,10 +164,12 @@ where genero = 'Fantasia';
 -- Mostre os pedidos realizados entre '2026-03-05' e '2026-03-12'.
 select *
 from pedidos
-where data_pedido between '2026-03-05' and '2026-03-12';
+where data_pedido 
+between '2026-03-05' and '2026-03-12';
 
 -- 20.
 -- Liste os livros com preço entre 50 e 80.
 select livro
 from pedidos
-where preco between 50 and 80;
+where preco 
+between 50 and 80;
