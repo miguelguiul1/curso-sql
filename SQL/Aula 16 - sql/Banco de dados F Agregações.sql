@@ -134,6 +134,6 @@ limit 1;
 select vendedor,count(quantidade) 
 as maior_número_de_vendas 
 from vendas 
-group by vendedor
-order by maior_número_de_vendas desc
-limit 1;
+group by vendedor 
+order by maior_número_de_vendas desc 
+limit 1; 
